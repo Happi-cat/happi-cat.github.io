@@ -1,0 +1,45 @@
+---
+---
+
+@import "bootstrap";
+@import "variables";
+@import "mixins";
+
+// Global Components
+@import "global";
+@import "grid";
+// Footer Components
+@import "footer";
+// Navigation
+@import "nav";
+// Header
+@import "header";
+// Post Preview Pages
+@import "posts";
+// Sections
+
+.section-heading {
+	font-size: 36px;
+	margin-top: 60px;
+	font-weight: 700;
+}
+
+.caption {
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	font-style: italic;
+	margin: 0;
+	display: block;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+
+// Button Styles
+@import "buttons";
+// Pager Styling
+@import "pager";
+// -- Highlight Color Customization
+@import "customization";

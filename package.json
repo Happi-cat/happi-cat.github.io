@@ -1,0 +1,12 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "static site",
+  "devDependencies": {},
+  "author": "sergey svirsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Happi-cat/happi-cat.github.io/issues"
+  },
+  "homepage": "https://happi-cat.github.io/"
+}

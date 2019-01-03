@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Write your site description here. It will be used as your sites meta description as well!">
+
+    <title>SharePoint - Siarhei's Blog</title>
+
+    <link rel="canonical" href="/docs/styleguides/sharepoint-styleguides/">
+
+    <link rel="stylesheet" href="/docs/css/main.css">
+    <link rel="stylesheet" href="/docs/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="site-navbar">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/docs/">Siarhei's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/docs/">Home</a>
+                </li>
+                <li>
+                    <a href="/docs/styleguides">Style Guides</a>
+                </li>
+                <li>
+                    <a href="/docs/flowers">Flowers</a>
+                </li>
+                <li>
+                    <a href="/docs/about">About</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/docs/img/code-bg-01.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="middle-large-column">
+                <div class="site-heading">
+                    <h1>SharePoint</h1>
+                    <hr class="small">
+                    <span class="subheading">Style guides and naming conventions for SharePoint</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="middle-large-column">
+			<h1 id="preface">Preface</h1>
+
+<p>Partially based on next <a href="http://www.nothingbutsharepoint.com/2010/12/07/a-guide-to-sharepoint-naming-conventions-aspx-2/">article</a></p>
+
+<h1 id="naming-conventions">Naming Conventions</h1>
+
+<h2 id="project-name">1. Project Name</h2>
+
+<p>Project name could be:</p>
+
+<ul>
+  <li><em>&lt;Company&gt;.&lt;Project or Department&gt;.&lt;Technology&gt;.&lt;Optional subdivision&gt;</em></li>
+</ul>
+
+<p>In real life it might look like this:</p>
+
+<ul>
+  <li><em>Stonebridge.Marketing.SharePoint.EventReceivers</em></li>
+</ul>
+
+<p>You might not want your company name in the namespace or maybe you want to use a product name in there instead. Some examples:</p>
+
+<ul>
+  <li>
+    <p><em>SharePoint.Administration</em></p>
+  </li>
+  <li>
+    <p><em>Microsoft.Office.Server.Search</em></p>
+  </li>
+</ul>
+
+<p>If you are developing an internal framework library, you can omit company name and use platform name instead.</p>
+
+<h2 id="features">2. Features</h2>
+
+<p>When a new feature is created, you will see it listed in your project as <em>Feature1</em>. The title of the feature is named <em>ProjectName + Feature1</em>.  In this case, the feature is named <em>SomeCompany.Marketing.SharePoint Feature1</em>.  Note, that a space is there between the project name and Feature1. </p>
+
+<p>When you deploy this, the actual folder that gets deployed is named with the name of the project itself and appends an underscore followed by the name of the feature. For example, Visual Studio would name the folder <em>SomeCompany.Marketing.SharePoint_ContentTypes</em>. </p>
+
+<p>Please put a description on your feature. </p>
+
+<p>Viewing the feature in SharePoint, you will see the dot notation in the title and a nice description.</p>
+
+<h2 id="site-columns">3. Site Columns</h2>
+
+<p>Once the column is created, the internal name cannot be changed.  Why does this matter?  It matters because you want that internal name column to be named consistently with everything else. How should you name it?  Do not abbreviate.  On top of that, don’t use spaces. As example, you can use site column names such as these:</p>
+
+<ul>
+  <li>
+    <p>ProductCode</p>
+  </li>
+  <li>
+    <p>Color</p>
+  </li>
+  <li>
+    <p>SatisfactionRating</p>
+  </li>
+</ul>
+
+<h2 id="content-types">4. Content Types</h2>
+
+<p>Content Types go hand in hand with Site Columns, so we follow the same rules.  Avoid abbreviation when naming your content types.  Avoid spaces in content type names.</p>
+
+<h2 id="lists">5. Lists</h2>
+
+<p>Choosing good names makes finding lists easier. All of the other naming rules apply here, but you should decide on whether you like spaces or not.  SharePoint has no issues with you putting spaces in the name of a list or document library.  A lot of the default lists such as <em>Shared Documents</em> included in site definitions such as the Team Site have lists with spaces in them. </p>
+
+<h2 id="sites">6. Sites</h2>
+
+<p>For sites, I recommend following the same guidelines you do with lists.  This simply allows the URLs of sites to be typed in easier.  You can make the title whatever you want, just be consistent in the way you set the URL for the site. </p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>You can follow these guidelines but first you should be consistent and follow guidelines and conventions in your project.</p>
+
+		</div>
+	</div>
+</div>
+
+<hr>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="middle-large-column">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href="https://twitter.com/SvirskiSiarhei">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://www.linkedin.com/profile/view?id=263014095">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://vk.com/meowter_kautsuo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://github.com/happi-cat">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Siarhei's Blog 2015</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/docs/js/jquery/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/docs/js/bootstrap/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/docs/js/blog.js "></script>
+
+
+</body>
+
+</html>
