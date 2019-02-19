@@ -1,6 +1,6 @@
 ---
 title:      "Links about OKR, GIST, ICE"
-date:       2019-01-03
+date:       2019-02-04
 layout:     post
 category: 	"planning"
 tags:		"goal planning"
